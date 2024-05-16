@@ -8,14 +8,10 @@ MUTs = [
     "gpt-4-turbo-2024-04-09",
     "gpt-4-0125-preview",
     "gpt-3.5-turbo-0125",
-    # "mistral-large-2402"
-    # "claude-3-opus-20240229"
-    # "models/gemini-1.5-pro-latest"
+    # "mistral-large-2402",
+    # "claude-3-opus-20240229",
+    # "models/gemini-1.5-pro-latest",
 ]
-
-
-def run(p, m):
-    return ""
 
 
 def main():
@@ -34,6 +30,16 @@ def main():
             with open(fn, "w") as f:
                 f.write(answer)
 
+
+def run(p, m):
+    if m.startswith("gpt"):
+        return openai_run(p, m)
+    else:
+        raise RuntimeError(f"Unknown model {m}")
+
+
+def openai_run(p, m):
+    return ""
 
 
 if __name__ == "__main__":
