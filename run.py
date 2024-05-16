@@ -29,6 +29,8 @@ def main():
             print(fn)
             with open(fn, "w") as f:
                 f.write(answer)
+                if not answer.endswith("\n"):
+                    f.write("\n")
 
 
 def run(p, m):
@@ -39,7 +41,16 @@ def run(p, m):
 
 
 def openai_run(p, m):
-    return ""
+    os.environ["OPENAI_API_KEY"] = stripped_content(".openai_api_key")
+    messages = [{"role": "user", "content": p}]
+    response = openai.OpenAI().chat.completions.create(
+        model=m, messages=messages, temperature=0)
+    return response.choices[0].message.content.strip()
+
+
+def stripped_content(fn):
+    with open(fn, "r") as f:
+        return f.read().strip()
 
 
 if __name__ == "__main__":
