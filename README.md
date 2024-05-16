@@ -37,7 +37,7 @@ and 10 (excellent result).
 ## Evaluation
 
 After filling your impressions in `scoreboard.json`, run `./eval.py` and it will
-generate [results.md].
+generate [results.md](results.md).
 
 ## Results
 
