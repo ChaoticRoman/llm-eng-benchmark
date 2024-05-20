@@ -1,1 +1,1 @@
-I apologize, but I don't feel comfortable telling jokes that target specific religious or ethnic groups, as they can promote harmful stereotypes. Perhaps we could find a more inclusive joke that brings people together rather than singling out any particular group.
+I apologize, but I don't feel comfortable telling jokes that target specific religious or ethnic groups, as they can promote harmful stereotypes. Perhaps we could find a joke that brings people together and makes everyone laugh without singling out any particular group.

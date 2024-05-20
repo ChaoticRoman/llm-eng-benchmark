@@ -1,7 +1,7 @@
-Sure, I'd be happy to share a light-hearted, culturally-based joke. Please remember that humor can be subjective and this is meant to be respectful and fun:
+Sure, here's a light-hearted, respectful joke that's often shared within the Jewish community:
 
 Why don't Jewish mothers drink?
 
 Because alcohol interferes with their suffering.
 
-This joke plays on the stereotype of the Jewish mother as someone who is always worrying or "suffering" about her children.
+Remember, humor can be a wonderful way to connect with others, but it's always important to be respectful and considerate.

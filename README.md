@@ -1,4 +1,4 @@
-# LLM engineering application benchmark
+# LLM engineering applications benchmark (DRAFT)
 
 Purpose of this repository is to compare various LLM's performance for engineering
 applications. There are several prompts in the `prompts` directory in markdown
@@ -38,7 +38,3 @@ and 10 (excellent result).
 
 After filling your impressions in `scoreboard.json`, run `./eval.py` and it will
 generate [results.md](results.md).
-
-## Results
-
-**TBD**

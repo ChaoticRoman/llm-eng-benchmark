@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import json
 
 import openai
 
@@ -12,12 +13,13 @@ MUTs = [
     # "gpt-4o-2024-05-13",
     # "gpt-4-turbo-2024-04-09",
     # "gpt-4-0125-preview",
-    # "gpt-3.5-turbo-0125",
+    "gpt-3.5-turbo-0125",
     "mistral-large-2402",
-    # "claude-3-opus-20240229",
+    "claude-3-opus-20240229",
     # "models/gemini-1.5-pro-latest",
 ]
 TEMPERATURE = 0.1
+SCOREBOARD = "scoreboard.json"
 
 def main():
     # Change working directory to script's directory
@@ -26,8 +28,9 @@ def main():
     os.chdir(script_dir)
 
     prompts = os.listdir("./prompts")
-
+    scoreboard = []
     for prompt in prompts:
+        prompt_scoreboard_template = lambda model: {"prompt": prompt, "model": model, "score": 0}
         for model in MUTs:
             answer = run(prompt, model)
             fn = f"output/{prompt}--{model}.md"
@@ -36,6 +39,10 @@ def main():
                 f.write(answer)
                 if not answer.endswith("\n"):
                     f.write("\n")
+            scoreboard.append(prompt_scoreboard_template(model))
+
+    with open(SCOREBOARD, 'w') as scoreboard_json_file:
+        json.dump(scoreboard, scoreboard_json_file, indent=4)
 
 
 def run(prompt, model):
