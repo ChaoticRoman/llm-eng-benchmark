@@ -1,4 +1,4 @@
-Sure, here's a classic one for you:
+Sure, here's a light-hearted joke for you:
 
 Why don't scientists trust atoms?
 

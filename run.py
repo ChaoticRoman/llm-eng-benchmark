@@ -2,14 +2,18 @@
 import os
 
 import openai
+
 import anthropic
 
+from mistralai.client import MistralClient
+from mistralai.models.chat_completion import ChatMessage as MistralChatMessage
+
 MUTs = [
-    # "gpt-4o-2024-05-13",
-    # "gpt-4-turbo-2024-04-09",
-    # "gpt-4-0125-preview",
-    # "gpt-3.5-turbo-0125",
-    # "mistral-large-2402",
+    "gpt-4o-2024-05-13",
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4-0125-preview",
+    "gpt-3.5-turbo-0125",
+    "mistral-large-2402",
     "claude-3-opus-20240229",
     # "models/gemini-1.5-pro-latest",
 ]
@@ -34,30 +38,41 @@ def main():
                     f.write("\n")
 
 
-def run(p, m):
-    if m.startswith("gpt"):
-        return openai_run(p, m)
-    elif m.startswith("claude"):
-        return anthropic_run(p, m)
+def run(prompt, model):
+    if model.startswith("gpt"):
+        return openai_run(prompt, model)
+    elif model.startswith("claude"):
+        return anthropic_run(prompt, model)
+    elif model.startswith("mistral"):
+        return mistral_run(prompt, model)
     else:
-        raise RuntimeError(f"Unknown model {m}")
+        raise RuntimeError(f"Unknown model {model}")
 
 
-def openai_run(p, m):
+def openai_run(prompt, model):
     os.environ["OPENAI_API_KEY"] = stripped_content(".openai_api_key")
-    messages = [{"role": "user", "content": p}]
+    messages = [{"role": "user", "content": prompt}]
     response = openai.OpenAI().chat.completions.create(
-        model=m, messages=messages, temperature=TEMPERATURE)
+        model=model, messages=messages, temperature=TEMPERATURE)
     return response.choices[0].message.content.strip()
 
 
-def anthropic_run(p, m):
+def anthropic_run(prompt, model):
     client = anthropic.Anthropic(api_key=stripped_content(".anthropic_api_key"))
     message = client.messages.create(
-        model="claude-3-opus-20240229", max_tokens=1000, temperature=TEMPERATURE,
-        messages=[{"role": "user", "content": [{"type": "text", "text": p}]}]
+        model=model, max_tokens=1000, temperature=TEMPERATURE,
+        messages=[{"role": "user", "content": [{"type": "text", "text": prompt}]}]
     )
     return message.content[0].text
+
+
+def mistral_run(prompt, model):
+    client = MistralClient(api_key=stripped_content(".mistral_api_key"))
+    chat_response = client.chat(
+        model=model,
+        messages=[MistralChatMessage(role="user", content=prompt)]
+    )
+    return chat_response.choices[0].message.content
 
 
 def stripped_content(fn):
