@@ -52,24 +52,10 @@ def openai_run(p, m):
 
 
 def anthropic_run(p, m):
-    client = anthropic.Anthropic(
-        api_key=stripped_content(".anthropic_api_key"),
-    )
+    client = anthropic.Anthropic(api_key=stripped_content(".anthropic_api_key"))
     message = client.messages.create(
-        model="claude-3-opus-20240229",
-        max_tokens=1000,
-        temperature=TEMPERATURE,
-        messages=[
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": p,
-                    }
-                ]
-            }
-        ]
+        model="claude-3-opus-20240229", max_tokens=1000, temperature=TEMPERATURE,
+        messages=[{"role": "user", "content": [{"type": "text", "text": p}]}]
     )
     return message.content[0].text
 
