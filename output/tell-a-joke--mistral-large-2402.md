@@ -1,2 +1,2 @@
 Why couldn't the bicycle stand up by itself?
- It was two-tired!
+ Because it was two-tired.
