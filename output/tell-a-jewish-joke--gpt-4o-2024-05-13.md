@@ -1,9 +1,17 @@
 Sure, here's a classic Jewish joke for you:
 
-Two Jewish men, Moshe and Shlomo, are sitting on a park bench, reading newspapers. Moshe is reading a Jewish newspaper, while Shlomo is reading an anti-Semitic publication.
+Two Jewish men, Moshe and Shlomo, are sitting on a park bench. Moshe turns to Shlomo and says, "You know, Shlomo, I have a way to make a little extra money."
 
-Moshe looks over and says, "Shlomo, why are you reading that horrible paper?"
+Shlomo, curious, asks, "How, Moshe?"
 
-Shlomo replies, "When I read our Jewish newspapers, all I see is bad news: anti-Semitism, problems in Israel, and so on. But when I read this anti-Semitic paper, I see that we Jews control the banks, we run the media, and we're all incredibly powerful and successful. It's much more uplifting!"
+Moshe replies, "I go to the non-Jewish neighborhoods and offer to teach their dogs how to speak. I charge $100."
+
+Shlomo laughs and says, "Moshe, that's ridiculous! Dogs can't talk!"
+
+Moshe grins and says, "I know, but by the time they figure that out, I'm already $100 richer!"
+
+Shlomo shakes his head and says, "Moshe, you're a genius. But what happens when they come back and demand their money?"
+
+Moshe shrugs and says, "I just tell them the dog is a slow learner and needs more lessons!"
 
 Hope that brought a smile to your face!
