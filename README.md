@@ -15,7 +15,7 @@ Models that are benchmarked are:
 * `gpt-3.5-turbo-0125`
 * `mistral-large-2402`
 * `claude-3-opus-20240229`
-* `models/gemini-1.5-pro-latest` (as of date **TBD**)
+* TBD `models/gemini-1.5-pro-latest` (they will support API access from 2024-05-30)
 
 ## Requirements
 
