@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import json
+import time
 
 import openai
 
@@ -12,40 +13,32 @@ from mistralai.models.chat_completion import ChatMessage as MistralChatMessage
 import google.generativeai
 
 MUTs = [
-    # "gpt-4o-2024-05-13",
-    # "gpt-4-turbo-2024-04-09",
-    # "gpt-4-0125-preview",
-    # "gpt-3.5-turbo-0125",
-    # "mistral-large-2402",
-    # "claude-3-opus-20240229",
+    "gpt-4o-2024-05-13",
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4-0125-preview",
+    "gpt-3.5-turbo-0125",
+    "mistral-large-2402",
+    "claude-3-opus-20240229",
     "models/gemini-1.5-pro-latest",
 ]
 TEMPERATURE = 0.1
 SCOREBOARD = "scoreboard.json"
+PROMPTS_DIR = "./prompts"
 
 
 def main():
-    # Change working directory to script's directory
-    script_abs_path = os.path.abspath(__file__)
-    script_dir = os.path.dirname(script_abs_path)
-    os.chdir(script_dir)
-
-    prompts = os.listdir("./prompts")
-    scoreboard = []
+    set_working_directory()
+    prompts = os.listdir(PROMPTS_DIR)
     for prompt in prompts:
-        prompt_scoreboard_template = lambda model: {"prompt": prompt, "model": model, "score": 0}
         for model in MUTs:
-            answer = run(prompt, model)
+            prompt_content = stripped_content(os.path.join(PROMPTS_DIR, prompt))
+            start_time = time.perf_counter()
+            answer = run(prompt_content, model)
+            elapsed = time.perf_counter() - start_time
             fn = f"output/{prompt}--{model.replace("/", "-")}.md"
             print(fn)
-            with open(fn, "w") as f:
-                f.write(answer)
-                if not answer.endswith("\n"):
-                    f.write("\n")
-            scoreboard.append(prompt_scoreboard_template(model))
-
-    with open(SCOREBOARD, 'w') as scoreboard_json_file:
-        json.dump(scoreboard, scoreboard_json_file, indent=4)
+            save_to_file(fn, answer)
+            update_scoreboard(prompt, model, elapsed)
 
 
 def run(prompt, model):
@@ -97,6 +90,48 @@ def google_run(prompt, model):
 def stripped_content(fn):
     with open(fn, "r") as f:
         return f.read().strip()
+
+
+def save_to_file(fn, content):
+    with open(fn, "w") as f:
+        f.write(content)
+        if not content.endswith("\n"):
+            f.write("\n")
+
+
+def update_scoreboard(prompt, model, elapsed):
+    scoreboard = load_scoreboard()
+    scoreboard.append(
+        prompt_scoreboard_template(prompt, model, elapsed))
+    save_scoreboard(scoreboard)
+
+
+def load_scoreboard():
+    if os.path.isfile(SCOREBOARD):
+        with open(SCOREBOARD) as f:
+            return json.load(f)
+    else:
+        return []
+
+
+def save_scoreboard(scoreboard):
+    with open(SCOREBOARD, 'w') as f:
+        json.dump(scoreboard, f, indent=4)
+
+
+def prompt_scoreboard_template(prompt, model, elapsed):
+    return {
+        "prompt": prompt,
+        "model": model,
+        "time": elapsed,
+        "score": 0
+    }
+
+
+def set_working_directory():
+    script_abs_path = os.path.abspath(__file__)
+    script_dir = os.path.dirname(script_abs_path)
+    os.chdir(script_dir)
 
 
 if __name__ == "__main__":
