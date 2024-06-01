@@ -9,17 +9,20 @@ import anthropic
 from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage as MistralChatMessage
 
+import google.generativeai
+
 MUTs = [
     # "gpt-4o-2024-05-13",
     # "gpt-4-turbo-2024-04-09",
     # "gpt-4-0125-preview",
-    "gpt-3.5-turbo-0125",
-    "mistral-large-2402",
-    "claude-3-opus-20240229",
-    # "models/gemini-1.5-pro-latest",
+    # "gpt-3.5-turbo-0125",
+    # "mistral-large-2402",
+    # "claude-3-opus-20240229",
+    "models/gemini-1.5-pro-latest",
 ]
 TEMPERATURE = 0.1
 SCOREBOARD = "scoreboard.json"
+
 
 def main():
     # Change working directory to script's directory
@@ -33,7 +36,7 @@ def main():
         prompt_scoreboard_template = lambda model: {"prompt": prompt, "model": model, "score": 0}
         for model in MUTs:
             answer = run(prompt, model)
-            fn = f"output/{prompt}--{model}.md"
+            fn = f"output/{prompt}--{model.replace("/", "-")}.md"
             print(fn)
             with open(fn, "w") as f:
                 f.write(answer)
@@ -52,6 +55,8 @@ def run(prompt, model):
         return anthropic_run(prompt, model)
     elif model.startswith("mistral"):
         return mistral_run(prompt, model)
+    elif "gemini" in model:
+        return google_run(prompt, model)
     else:
         raise RuntimeError(f"Unknown model {model}")
 
@@ -80,6 +85,13 @@ def mistral_run(prompt, model):
         messages=[MistralChatMessage(role="user", content=prompt)]
     )
     return chat_response.choices[0].message.content
+
+
+def google_run(prompt, model):
+    google.generativeai.configure(api_key=stripped_content(".google_api_key"))
+    model = google.generativeai.GenerativeModel(model)
+    response = model.generate_content(prompt)
+    return response.text
 
 
 def stripped_content(fn):
