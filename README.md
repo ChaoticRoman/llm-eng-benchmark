@@ -15,7 +15,7 @@ Models that are benchmarked are:
 * `gpt-3.5-turbo-0125`
 * `mistral-large-2402`
 * `claude-3-opus-20240229`
-* TBD `models/gemini-1.5-pro-latest` (they will support API access from 2024-05-30)
+* `models/gemini-1.5-pro-latest`
 
 ## Requirements
 
@@ -36,5 +36,5 @@ and 10 (excellent result).
 
 ## Evaluation
 
-After filling your impressions in `scoreboard.json`, run `./eval.py` and it will
-generate [results.md](results.md).
+After filling your impressions in `scoreboard.json`, run `./eval.py` and it crete visualization
+for either time or score.
