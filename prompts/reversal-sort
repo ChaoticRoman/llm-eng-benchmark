@@ -1,0 +1,9 @@
+Imagine a sort algorithm, that sorts array of integers by repeatedly reversing the order of the first several elements of it.
+
+For example, to sort [12,13,11,14], you need to reverse the order of the first two (2) elements. You will get [13,12,11,14]. Then you shall reverse the order of the first three (3) elements, and you will get [11,12,13,14].
+
+For this assignment you shall implement C++ function that returns list of integers corresponding to the required reversals.
+
+E.g. for given vector [12,13,11,14] the function should return [2, 3].
+
+Provide also documentation and unittests.

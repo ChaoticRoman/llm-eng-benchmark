@@ -32,11 +32,12 @@ def main():
     for prompt in prompts:
         for model in MUTs:
             prompt_content = stripped_content(os.path.join(PROMPTS_DIR, prompt))
+            print(f"Running f{prompt} on {model}...")
             start_time = time.perf_counter()
             answer = run(prompt_content, model)
             elapsed = time.perf_counter() - start_time
             fn = f"output/{prompt}--{model.replace("/", "-")}.md"
-            print(fn)
+            print(f"Saving {fn}...")
             save_to_file(fn, answer)
             update_scoreboard(prompt, model, elapsed)
 
@@ -84,7 +85,10 @@ def google_run(prompt, model):
     google.generativeai.configure(api_key=stripped_content(".google_api_key"))
     model = google.generativeai.GenerativeModel(model)
     response = model.generate_content(prompt)
-    return response.text
+    try:
+        return response.text
+    except Exception as e:
+        return f"{e}\n\n{response}"
 
 
 def stripped_content(fn):
