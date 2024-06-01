@@ -32,7 +32,7 @@ def main():
     for prompt in prompts:
         for model in MUTs:
             prompt_content = stripped_content(os.path.join(PROMPTS_DIR, prompt))
-            print(f"Running f{prompt} on {model}...")
+            print(f"Running {prompt} on {model}...")
             start_time = time.perf_counter()
             answer = run(prompt_content, model)
             elapsed = time.perf_counter() - start_time

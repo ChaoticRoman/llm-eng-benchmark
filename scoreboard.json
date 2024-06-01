@@ -76,5 +76,311 @@
         "model": "claude-3-opus-20240229",
         "time": 32.37393223005347,
         "score": 0
+    },
+    {
+        "prompt": "snake",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 27.097782236989588,
+        "score": 0
+    },
+    {
+        "prompt": "explain-debye-shielding",
+        "model": "gpt-4o-2024-05-13",
+        "time": 8.367363174911588,
+        "score": 0
+    },
+    {
+        "prompt": "explain-debye-shielding",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 26.711114579928108,
+        "score": 0
+    },
+    {
+        "prompt": "explain-debye-shielding",
+        "model": "gpt-4-0125-preview",
+        "time": 20.680065021966584,
+        "score": 0
+    },
+    {
+        "prompt": "explain-debye-shielding",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 3.582607838092372,
+        "score": 0
+    },
+    {
+        "prompt": "explain-debye-shielding",
+        "model": "mistral-large-2402",
+        "time": 10.7329790010117,
+        "score": 0
+    },
+    {
+        "prompt": "explain-debye-shielding",
+        "model": "claude-3-opus-20240229",
+        "time": 25.093037987942807,
+        "score": 0
+    },
+    {
+        "prompt": "explain-debye-shielding",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 12.466711935936473,
+        "score": 0
+    },
+    {
+        "prompt": "nmap-udp-root",
+        "model": "gpt-4o-2024-05-13",
+        "time": 5.603141607018188,
+        "score": 0
+    },
+    {
+        "prompt": "nmap-udp-root",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 17.55759933195077,
+        "score": 0
+    },
+    {
+        "prompt": "nmap-udp-root",
+        "model": "gpt-4-0125-preview",
+        "time": 15.947758469963446,
+        "score": 0
+    },
+    {
+        "prompt": "nmap-udp-root",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 1.5404631790006533,
+        "score": 0
+    },
+    {
+        "prompt": "nmap-udp-root",
+        "model": "mistral-large-2402",
+        "time": 6.653584262006916,
+        "score": 0
+    },
+    {
+        "prompt": "nmap-udp-root",
+        "model": "claude-3-opus-20240229",
+        "time": 21.10692365397699,
+        "score": 0
+    },
+    {
+        "prompt": "nmap-udp-root",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 9.309377069002949,
+        "score": 0
+    },
+    {
+        "prompt": "compare-mcus",
+        "model": "gpt-4o-2024-05-13",
+        "time": 22.704441612935625,
+        "score": 0
+    },
+    {
+        "prompt": "compare-mcus",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 24.185605086036958,
+        "score": 0
+    },
+    {
+        "prompt": "compare-mcus",
+        "model": "gpt-4-0125-preview",
+        "time": 35.67598587193061,
+        "score": 0
+    },
+    {
+        "prompt": "compare-mcus",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 7.572792707011104,
+        "score": 0
+    },
+    {
+        "prompt": "compare-mcus",
+        "model": "mistral-large-2402",
+        "time": 10.784784188028425,
+        "score": 0
+    },
+    {
+        "prompt": "compare-mcus",
+        "model": "claude-3-opus-20240229",
+        "time": 33.66297021997161,
+        "score": 0
+    },
+    {
+        "prompt": "markdown-viewer",
+        "model": "gpt-4o-2024-05-13",
+        "time": 11.41952440503519,
+        "score": 0
+    },
+    {
+        "prompt": "markdown-viewer",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 31.657906507956795,
+        "score": 0
+    },
+    {
+        "prompt": "markdown-viewer",
+        "model": "gpt-4-0125-preview",
+        "time": 25.261243714019656,
+        "score": 0
+    },
+    {
+        "prompt": "markdown-viewer",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 4.564843344967812,
+        "score": 0
+    },
+    {
+        "prompt": "markdown-viewer",
+        "model": "mistral-large-2402",
+        "time": 16.095967895002104,
+        "score": 0
+    },
+    {
+        "prompt": "markdown-viewer",
+        "model": "claude-3-opus-20240229",
+        "time": 30.652913665981032,
+        "score": 0
+    },
+    {
+        "prompt": "reversal-sort",
+        "model": "gpt-4o-2024-05-13",
+        "time": 18.279520284966566,
+        "score": 0
+    },
+    {
+        "prompt": "reversal-sort",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 23.85039096593391,
+        "score": 0
+    },
+    {
+        "prompt": "reversal-sort",
+        "model": "gpt-4-0125-preview",
+        "time": 24.866170279914513,
+        "score": 0
+    },
+    {
+        "prompt": "reversal-sort",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 7.043122863979079,
+        "score": 0
+    },
+    {
+        "prompt": "reversal-sort",
+        "model": "mistral-large-2402",
+        "time": 11.887485925108194,
+        "score": 0
+    },
+    {
+        "prompt": "reversal-sort",
+        "model": "claude-3-opus-20240229",
+        "time": 32.60198406293057,
+        "score": 0
+    },
+    {
+        "prompt": "git-repo-join",
+        "model": "gpt-4o-2024-05-13",
+        "time": 9.321135791949928,
+        "score": 0
+    },
+    {
+        "prompt": "git-repo-join",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 19.551449132035486,
+        "score": 0
+    },
+    {
+        "prompt": "git-repo-join",
+        "model": "gpt-4-0125-preview",
+        "time": 25.113719947985373,
+        "score": 0
+    },
+    {
+        "prompt": "git-repo-join",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 3.1390698980540037,
+        "score": 0
+    },
+    {
+        "prompt": "git-repo-join",
+        "model": "mistral-large-2402",
+        "time": 13.045485694892704,
+        "score": 0
+    },
+    {
+        "prompt": "git-repo-join",
+        "model": "claude-3-opus-20240229",
+        "time": 16.992890561930835,
+        "score": 0
+    },
+    {
+        "prompt": "rule-of-five-move-semantics",
+        "model": "gpt-4o-2024-05-13",
+        "time": 22.41331748198718,
+        "score": 0
+    },
+    {
+        "prompt": "rule-of-five-move-semantics",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 30.447818026994355,
+        "score": 0
+    },
+    {
+        "prompt": "rule-of-five-move-semantics",
+        "model": "gpt-4-0125-preview",
+        "time": 26.6434652460739,
+        "score": 0
+    },
+    {
+        "prompt": "rule-of-five-move-semantics",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 4.790734392008744,
+        "score": 0
+    },
+    {
+        "prompt": "rule-of-five-move-semantics",
+        "model": "mistral-large-2402",
+        "time": 19.912927899044007,
+        "score": 0
+    },
+    {
+        "prompt": "rule-of-five-move-semantics",
+        "model": "claude-3-opus-20240229",
+        "time": 32.39620463200845,
+        "score": 0
+    },
+    {
+        "prompt": "tetris-3d",
+        "model": "gpt-4o-2024-05-13",
+        "time": 15.508002991089597,
+        "score": 0
+    },
+    {
+        "prompt": "tetris-3d",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 34.844599224976264,
+        "score": 0
+    },
+    {
+        "prompt": "tetris-3d",
+        "model": "gpt-4-0125-preview",
+        "time": 42.01874611596577,
+        "score": 0
+    },
+    {
+        "prompt": "tetris-3d",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 14.873607485089451,
+        "score": 0
+    },
+    {
+        "prompt": "tetris-3d",
+        "model": "mistral-large-2402",
+        "time": 11.143131615943275,
+        "score": 0
+    },
+    {
+        "prompt": "tetris-3d",
+        "model": "claude-3-opus-20240229",
+        "time": 34.20349851704668,
+        "score": 0
     }
 ]
