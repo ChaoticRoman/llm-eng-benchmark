@@ -1,12 +1,44 @@
 [
     {
-        "prompt": "tell-a-jewish-joke",
-        "model": "models/gemini-1.5-pro-latest",
+        "prompt": "too-small-buffer-bug",
+        "model": "gpt-4o-2024-05-13",
+        "time": 4.65262753306888,
         "score": 0
     },
     {
-        "prompt": "tell-a-joke",
+        "prompt": "too-small-buffer-bug",
+        "model": "gpt-4-turbo-2024-04-09",
+        "time": 13.785715074045584,
+        "score": 0
+    },
+    {
+        "prompt": "too-small-buffer-bug",
+        "model": "gpt-4-0125-preview",
+        "time": 24.09374653105624,
+        "score": 0
+    },
+    {
+        "prompt": "too-small-buffer-bug",
+        "model": "gpt-3.5-turbo-0125",
+        "time": 2.4853212329326198,
+        "score": 0
+    },
+    {
+        "prompt": "too-small-buffer-bug",
+        "model": "mistral-large-2402",
+        "time": 7.533749043010175,
+        "score": 0
+    },
+    {
+        "prompt": "too-small-buffer-bug",
+        "model": "claude-3-opus-20240229",
+        "time": 15.038590557989664,
+        "score": 0
+    },
+    {
+        "prompt": "too-small-buffer-bug",
         "model": "models/gemini-1.5-pro-latest",
+        "time": 9.791717846994288,
         "score": 0
     }
 ]
