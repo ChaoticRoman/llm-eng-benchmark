@@ -12,14 +12,14 @@ from mistralai.models.chat_completion import ChatMessage as MistralChatMessage
 
 import google.generativeai
 
-MUTs = [
-    "gpt-4o-2024-05-13",
-    "gpt-4-turbo-2024-04-09",
-    "gpt-4-0125-preview",
-    "gpt-3.5-turbo-0125",
-    "mistral-large-2402",
-    "claude-3-opus-20240229",
-    "models/gemini-1.5-pro-latest",
+MUTs = [  # pricing is input / output USD price per 1M tokens
+    "gpt-4o-2024-05-13",             # https://openai.com/api/pricing/          5 / 15
+    "gpt-4-turbo-2024-04-09",        # https://openai.com/api/pricing/         10 / 30
+    "gpt-4-0125-preview",            # https://openai.com/api/pricing/         10 / 30
+    "gpt-3.5-turbo-0125",            # https://openai.com/api/pricing/        0.5 / 1.5
+    "mistral-large-2402",            # https://mistral.ai/technology/#pricing   4 / 12
+    "claude-3-opus-20240229",        # https://www.anthropic.com/api           15 / 75
+    "models/gemini-1.5-pro-latest",  # https://ai.google.dev/pricing          3.5 / 10.5 (for prompts up to 128k tokens, then it doubles)
 ]
 TEMPERATURE = 0.1
 SCOREBOARD = "scoreboard.json"

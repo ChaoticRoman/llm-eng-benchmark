@@ -382,5 +382,41 @@
         "model": "claude-3-opus-20240229",
         "time": 34.20349851704668,
         "score": 0
+    },
+    {
+        "prompt": "markdown-viewer",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 28.898509935941547,
+        "score": 0
+    },
+    {
+        "prompt": "reversal-sort",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 27.27124100108631,
+        "score": 0
+    },
+    {
+        "prompt": "git-repo-join",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 15.900247907964513,
+        "score": 0
+    },
+    {
+        "prompt": "rule-of-five-move-semantics",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 27.547625922015868,
+        "score": 0
+    },
+    {
+        "prompt": "tetris-3d",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 50.007344861049205,
+        "score": 0
+    },
+    {
+        "prompt": "compare-mcus",
+        "model": "models/gemini-1.5-pro-latest",
+        "time": 17.45378770295065,
+        "score": 0
     }
 ]
