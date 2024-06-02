@@ -87,43 +87,43 @@
         "prompt": "explain-debye-shielding",
         "model": "gpt-4o-2024-05-13",
         "time": 8.367363174911588,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "explain-debye-shielding",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 26.711114579928108,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "explain-debye-shielding",
         "model": "gpt-4-0125-preview",
         "time": 20.680065021966584,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "explain-debye-shielding",
         "model": "gpt-3.5-turbo-0125",
         "time": 3.582607838092372,
-        "score": 0
+        "score": 6
     },
     {
         "prompt": "explain-debye-shielding",
         "model": "mistral-large-2402",
         "time": 10.7329790010117,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "explain-debye-shielding",
         "model": "claude-3-opus-20240229",
         "time": 25.093037987942807,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "explain-debye-shielding",
         "model": "models/gemini-1.5-pro-latest",
         "time": 12.466711935936473,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "nmap-udp-root",
@@ -171,37 +171,37 @@
         "prompt": "compare-mcus",
         "model": "gpt-4o-2024-05-13",
         "time": 22.704441612935625,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "compare-mcus",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 24.185605086036958,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "compare-mcus",
         "model": "gpt-4-0125-preview",
         "time": 35.67598587193061,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "compare-mcus",
         "model": "gpt-3.5-turbo-0125",
         "time": 7.572792707011104,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "compare-mcus",
         "model": "mistral-large-2402",
         "time": 10.784784188028425,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "compare-mcus",
         "model": "claude-3-opus-20240229",
         "time": 33.66297021997161,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "markdown-viewer",
@@ -417,6 +417,6 @@
         "prompt": "compare-mcus",
         "model": "models/gemini-1.5-pro-latest",
         "time": 17.45378770295065,
-        "score": 0
+        "score": 7
     }
 ]

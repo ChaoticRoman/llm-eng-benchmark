@@ -14,6 +14,7 @@ models = list(set(item['model'] for item in data))
 times_dict = {prompt: {model: None for model in models} for prompt in prompts}
 
 item_type = input("Compare score or time? ")
+ylable = {"time": "Time [s]", "score": "Score [0-10]"}
 
 # Populate the dictionary with times
 for item in data:
@@ -33,7 +34,7 @@ for i, model in enumerate(models):
 # Customize the plot
 ax.set_title('Comparison of Times for Various Models and Prompts')
 ax.set_xlabel('Prompts')
-ax.set_ylabel('Time (seconds)')
+ax.set_ylabel(ylabel[item_type])
 ax.legend(title='Models')
 ax.grid(True)
 

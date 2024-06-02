@@ -67,8 +67,7 @@ def anthropic_run(prompt, model):
     client = anthropic.Anthropic(api_key=stripped_content(".anthropic_api_key"))
     message = client.messages.create(
         model=model, max_tokens=1000, temperature=TEMPERATURE,
-        messages=[{"role": "user", "content": [{"type": "text", "text": prompt}]}]
-    )
+        messages=[{"role": "user", "content": [{"type": "text", "text": prompt}]}])
     return message.content[0].text
 
 
@@ -83,7 +82,8 @@ def mistral_run(prompt, model):
 
 def google_run(prompt, model):
     google.generativeai.configure(api_key=stripped_content(".google_api_key"))
-    model = google.generativeai.GenerativeModel(model)
+    config = google.generativeai.GenerationConfig(temperature=TEMPERATURE)
+    model = google.generativeai.GenerativeModel(model, generation_config=config)
     response = model.generate_content(prompt)
     try:
         return response.text
