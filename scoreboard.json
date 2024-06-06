@@ -45,37 +45,37 @@
         "prompt": "snake",
         "model": "gpt-4o-2024-05-13",
         "time": 16.57534434797708,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "snake",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 33.38914579898119,
-        "score": 0
+        "score": 3
     },
     {
         "prompt": "snake",
         "model": "gpt-4-0125-preview",
         "time": 37.96570176794194,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "snake",
         "model": "gpt-3.5-turbo-0125",
         "time": 9.351164607098326,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "snake",
         "model": "mistral-large-2402",
         "time": 14.209323712042533,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "snake",
         "model": "claude-3-opus-20240229",
         "time": 32.37393223005347,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "snake",
