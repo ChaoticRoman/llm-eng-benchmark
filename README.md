@@ -1,4 +1,4 @@
-# LLM engineering applications benchmark (DRAFT)
+# LLM engineering applications benchmark
 
 Purpose of this repository is to compare various LLM's performance for engineering
 applications. There are several prompts in the `prompts` directory in markdown

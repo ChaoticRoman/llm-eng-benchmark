@@ -129,43 +129,43 @@
         "prompt": "nmap-udp-root",
         "model": "gpt-4o-2024-05-13",
         "time": 5.603141607018188,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "nmap-udp-root",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 17.55759933195077,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "nmap-udp-root",
         "model": "gpt-4-0125-preview",
         "time": 15.947758469963446,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "nmap-udp-root",
         "model": "gpt-3.5-turbo-0125",
         "time": 1.5404631790006533,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "nmap-udp-root",
         "model": "mistral-large-2402",
         "time": 6.653584262006916,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "nmap-udp-root",
         "model": "claude-3-opus-20240229",
         "time": 21.10692365397699,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "nmap-udp-root",
         "model": "models/gemini-1.5-pro-latest",
         "time": 9.309377069002949,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "compare-mcus",
@@ -207,109 +207,109 @@
         "prompt": "markdown-viewer",
         "model": "gpt-4o-2024-05-13",
         "time": 11.41952440503519,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "markdown-viewer",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 31.657906507956795,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "markdown-viewer",
         "model": "gpt-4-0125-preview",
         "time": 25.261243714019656,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "markdown-viewer",
         "model": "gpt-3.5-turbo-0125",
         "time": 4.564843344967812,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "markdown-viewer",
         "model": "mistral-large-2402",
         "time": 16.095967895002104,
-        "score": 0
+        "score": 4
     },
     {
         "prompt": "markdown-viewer",
         "model": "claude-3-opus-20240229",
         "time": 30.652913665981032,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "reversal-sort",
         "model": "gpt-4o-2024-05-13",
         "time": 18.279520284966566,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "reversal-sort",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 23.85039096593391,
-        "score": 0
+        "score": 6
     },
     {
         "prompt": "reversal-sort",
         "model": "gpt-4-0125-preview",
         "time": 24.866170279914513,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "reversal-sort",
         "model": "gpt-3.5-turbo-0125",
         "time": 7.043122863979079,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "reversal-sort",
         "model": "mistral-large-2402",
         "time": 11.887485925108194,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "reversal-sort",
         "model": "claude-3-opus-20240229",
         "time": 32.60198406293057,
-        "score": 0
+        "score": 4
     },
     {
         "prompt": "git-repo-join",
         "model": "gpt-4o-2024-05-13",
         "time": 9.321135791949928,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "git-repo-join",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 19.551449132035486,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "git-repo-join",
         "model": "gpt-4-0125-preview",
         "time": 25.113719947985373,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "git-repo-join",
         "model": "gpt-3.5-turbo-0125",
         "time": 3.1390698980540037,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "git-repo-join",
         "model": "mistral-large-2402",
         "time": 13.045485694892704,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "git-repo-join",
         "model": "claude-3-opus-20240229",
         "time": 16.992890561930835,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "rule-of-five-move-semantics",
@@ -387,7 +387,7 @@
         "prompt": "markdown-viewer",
         "model": "models/gemini-1.5-pro-latest",
         "time": 28.898509935941547,
-        "score": 0
+        "score": 6
     },
     {
         "prompt": "reversal-sort",
@@ -399,7 +399,7 @@
         "prompt": "git-repo-join",
         "model": "models/gemini-1.5-pro-latest",
         "time": 15.900247907964513,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "rule-of-five-move-semantics",
