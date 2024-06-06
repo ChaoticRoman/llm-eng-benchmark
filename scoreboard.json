@@ -315,37 +315,37 @@
         "prompt": "rule-of-five-move-semantics",
         "model": "gpt-4o-2024-05-13",
         "time": 22.41331748198718,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "rule-of-five-move-semantics",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 30.447818026994355,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "rule-of-five-move-semantics",
         "model": "gpt-4-0125-preview",
         "time": 26.6434652460739,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "rule-of-five-move-semantics",
         "model": "gpt-3.5-turbo-0125",
         "time": 4.790734392008744,
-        "score": 0
+        "score": 7
     },
     {
         "prompt": "rule-of-five-move-semantics",
         "model": "mistral-large-2402",
         "time": 19.912927899044007,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "rule-of-five-move-semantics",
         "model": "claude-3-opus-20240229",
         "time": 32.39620463200845,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "tetris-3d",
@@ -405,7 +405,7 @@
         "prompt": "rule-of-five-move-semantics",
         "model": "models/gemini-1.5-pro-latest",
         "time": 27.547625922015868,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "tetris-3d",

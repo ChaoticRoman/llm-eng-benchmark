@@ -1,3 +1,3 @@
-Desing C++ class that stores two dimensional floar matrix, properly applies rule of five, takes full advantage of move semantics and RVO.
+Design C++ class that stores two-dimensional float matrix, properly applies rule of five, takes full advantage of move semantics and RVO.
 
-Adds some debug print to special member functions and demonstrate its usage.
+Adds some debug prints to special member functions and demonstrate their usage.
