@@ -3,43 +3,43 @@
         "prompt": "too-small-buffer-bug",
         "model": "gpt-4o-2024-05-13",
         "time": 4.65262753306888,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "too-small-buffer-bug",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 13.785715074045584,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "too-small-buffer-bug",
         "model": "gpt-4-0125-preview",
         "time": 24.09374653105624,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "too-small-buffer-bug",
         "model": "gpt-3.5-turbo-0125",
         "time": 2.4853212329326198,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "too-small-buffer-bug",
         "model": "mistral-large-2402",
         "time": 7.533749043010175,
-        "score": 0
+        "score": 9
     },
     {
         "prompt": "too-small-buffer-bug",
         "model": "claude-3-opus-20240229",
         "time": 15.038590557989664,
-        "score": 0
+        "score": 8
     },
     {
         "prompt": "too-small-buffer-bug",
         "model": "models/gemini-1.5-pro-latest",
         "time": 9.791717846994288,
-        "score": 0
+        "score": 10
     },
     {
         "prompt": "snake",
@@ -351,37 +351,37 @@
         "prompt": "tetris-3d",
         "model": "gpt-4o-2024-05-13",
         "time": 15.508002991089597,
-        "score": 0
+        "score": 6
     },
     {
         "prompt": "tetris-3d",
         "model": "gpt-4-turbo-2024-04-09",
         "time": 34.844599224976264,
-        "score": 0
+        "score": 4
     },
     {
         "prompt": "tetris-3d",
         "model": "gpt-4-0125-preview",
         "time": 42.01874611596577,
-        "score": 0
+        "score": 3
     },
     {
         "prompt": "tetris-3d",
         "model": "gpt-3.5-turbo-0125",
         "time": 14.873607485089451,
-        "score": 0
+        "score": 2
     },
     {
         "prompt": "tetris-3d",
         "model": "mistral-large-2402",
         "time": 11.143131615943275,
-        "score": 0
+        "score": 1
     },
     {
         "prompt": "tetris-3d",
         "model": "claude-3-opus-20240229",
         "time": 34.20349851704668,
-        "score": 0
+        "score": 3
     },
     {
         "prompt": "markdown-viewer",
@@ -393,7 +393,7 @@
         "prompt": "reversal-sort",
         "model": "models/gemini-1.5-pro-latest",
         "time": 27.27124100108631,
-        "score": 0
+        "score": 5
     },
     {
         "prompt": "git-repo-join",
@@ -411,7 +411,7 @@
         "prompt": "tetris-3d",
         "model": "models/gemini-1.5-pro-latest",
         "time": 50.007344861049205,
-        "score": 0
+        "score": 2
     },
     {
         "prompt": "compare-mcus",
