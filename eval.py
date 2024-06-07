@@ -18,14 +18,25 @@ metric = sys.argv[1]
 prompts = list(set(item['prompt'] for item in data))
 models = list(set(item['model'] for item in data))
 
+# Prepare data for plotting
+data_dict = {prompt: {model: None for model in models} for prompt in prompts}
+for item in data:
+    data_dict[item['prompt']][item['model']] = item[metric]
+
+def average(model):
+    values = [
+        data_dict[prompt][model] for prompt in prompts
+        if prompt in data_dict and model in data_dict[prompt]
+    ]
+    return sum(values) / len(values)
+
+# Get average values per model
+averages_per_model = {m: average(m) for m in models}
+
 # Sort prompts and models for consistent ordering
 prompts.sort()
-models.sort()
-
-# Prepare data for plotting
-plot_data = {prompt: {model: None for model in models} for prompt in prompts}
-for item in data:
-    plot_data[item['prompt']][item['model']] = item[metric]
+models.sort(key=lambda model: average(model))
+print(models)
 
 # Plotting
 fig, ax = plt.subplots()
@@ -36,7 +47,7 @@ index = range(len(prompts))
 bar_positions = {model: [i + bar_width * idx for i in index] for idx, model in enumerate(models)}
 
 for model in models:
-    values = [plot_data[prompt][model] for prompt in prompts]
+    values = [data_dict[prompt][model] for prompt in prompts]
     ax.bar(bar_positions[model], values, bar_width, label=model)
 
 # Set labels and title
