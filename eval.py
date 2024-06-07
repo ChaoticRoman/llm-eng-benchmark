@@ -52,6 +52,7 @@ averages_per_model = {m: average(m) for m in models}
 # Sort prompts and models for consistent ordering
 prompts.sort()
 models.sort(key=lambda model: average(model))
+[print(f"{average(model):6.1f} {model}") for model in models]
 
 # Plotting
 fig, ax = plt.subplots()
@@ -61,7 +62,7 @@ bar_width = 0.1  # TODO: bar_width * number_of_models is supposed to be slightly
 prompt_indices = range(len(prompts))
 bar_positions = {
     model: [prompt_i + bar_width * model_i for prompt_i in prompt_indices]
-    for model_i, _ in enumerate(models)
+    for model_i, model in enumerate(models)
 }
 
 for model in models:
