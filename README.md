@@ -38,3 +38,12 @@ and 10 (excellent result).
 
 After filling your impressions in `scoreboard.json`, run `./eval.py` and it crete visualization
 for either time or score.
+
+## Results
+
+You can see raw output of models in [`./output`](./output), check the [`scoreboard.json`](./scoreboard.json)
+with my personal opinion. Here are visualizations for score and time:
+
+![Evaluated score](https://raw.githubusercontent.com/ChaoticRoman/llm-eng-benchmark/master/eval_score.png)
+
+![Evaluated time](https://raw.githubusercontent.com/ChaoticRoman/llm-eng-benchmark/master/eval_time.png)
